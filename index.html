@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - HTML Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">DOM - HTML forms</h1>
+    <p id="description">
+      HTML form for collection of details
+    </p>
+    <form id="form" action="">
+      <fieldset class="fieldset">
+        <div class="maindiv">
+        <div class="form-group">
+            <label for="firstname">First name</label>
+            <input
+              id="first-name"
+              type="text"
+              name="firstname"
+              placeholder="Please enter your first name"
+              required />
+            <br /><br />
+
+            <label for="lastname">Last name</label>
+            <input
+              id="last-name"
+              type="text"
+              name="lastname"
+              placeholder="Please enter your last name"
+              required />
+            <br /><br />
+
+            <label for="pincode">Pincode</label>
+            <input
+              type="text"
+              id="pincode"
+              placeholder="Please enter your pincode"
+              required />
+            <br /><br />
+
+            <label for="gender">Gender</label>
+            <br /><br />
+            <input
+              type="radio"
+              id="gender"
+              name="gender"
+              value="male"
+              required />
+            <label for="male">Male</label><br />
+            <input type="radio" id="gender" name="gender" value="male"required /><label
+              for="female">Female</label>
+            <br /><br />
+
+            <label for="food">Select any food items</label>
+            <select name="food" id="food" multiple>
+                <option value="Chappathi">Chappathi</option>
+                <option value="Parotta">Parotta</option>
+                <option value="Dosa">Dosa</option>
+                <option value="Idly">Idly</option>
+            </select>
+            <br /><br />
+
+            <label for="state">State</label>
+            <input
+              id="state"
+              type="text"
+              name="state"
+              placeholder="Please enter your state"
+              required/>
+            <br /><br />
+
+            <label for="country">country</label>
+            <input
+              id="country"
+              type="text"
+              name="country"
+              placeholder="Please enter your country"
+              required />
+            <br /><br />
+
+            <label for="address">Address</label><br />
+            <textarea
+              name="address"
+              id="address"
+              cols="30"
+              rows="10"
+              placeholder="Please enter your address" ></textarea>
+            <br /><br />
+
+            <input  type="button"id="submit" class="btn btn-primary" onclick="addnewRow()" value="Submit"/>
+              
+            <br /><br />
+          </div>
+
+          <div class="div2">
+            <table class="table" id="table">
+              <thead>
+                <tr>
+                  <th>First name</th>
+                  <th>Last name</th>
+                  <th>Pincode</th>
+                  <th>Gender</th>
+                  <th>Food</th>
+                  <th>State</th>
+                  <th>Country</th>
+                  <th>Address</th>
+                </tr>
+                <br />
+              </thead>
+              <tbody id="tbody">
+                <tr>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+
+    <!-- checking for test cases -->
+    <!-- <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script> -->
+</body>
+</html>
